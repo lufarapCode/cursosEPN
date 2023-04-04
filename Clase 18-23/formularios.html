@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Clase 18</title>
+        <meta charset="utf-8">
+    </head>
+    <body>    
+    <!-- FORMULARIOS -->
+<!--   fieldse: conjunto de controles / legend: titulo par cada fieldset    -->
+       
+<!--  El navegar va a reoncer que ese es un formulario que acepta archivos, de cualquier tipo. enctype="multipart/form-data"     -->
+        <form action="" enctype="multipart/form-data">
+           
+           <fieldset>
+               <legend>Login</legend>
+               <label for="nombre">Nombre:</label>
+               <input name="nombre" id="nombre" type="text" autocomplete="off"><br><br>
+               <label for="pass">Contraseña</label>
+               <input name="pass" id="pass" type="password">
+               <input type="date">
+               <input type="color">
+               <input type="submit" >
+           </fieldset>
+           
+           <fieldset>
+               <legend>Escoja alguna materia</legend>
+               <label for="f">física</label>
+               <input type="checkbox">
+               <label for="m">Matematica</label>
+               <input type="checkbox">
+               <label for="l">Luenguaje</label>
+               <input type="checkbox">
+               <label for="p">Programación</label><input type="checkbox">
+           </fieldset>
+           <fieldset>
+               <legend>Escoja una única materia</legend>
+               <label for="f">física</label>
+               <input name="materia" type="radio">
+               <label for="m">Matematica</label>
+               <input name="materia" type="radio">
+               <label for="l">Luenguaje</label>
+               <input name="materia" type="radio">
+               <label for="p">Programación</label><input name="materia" type="radio">
+           </fieldset>
+           
+           <fieldset>
+               <input type="range" min="0" max="100" value="10">
+               <input type="color">
+               <input type="search">
+<!-- PAra el input file, se debe agregar en el form lo necesario para que el navegador reconozca que se selecciono un archivo, ya sea pdf, word, etc              -->
+               <input type="file" multiple>
+               <input type="reset" value="Resetear">
+           </fieldset>
+            
+            
+        </form>
+        
+    </body>
+</html>

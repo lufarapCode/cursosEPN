@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formularios parte 2 </title>
+</head>
+<body>	
+	
+		<input type="submit" name="Enviar">
+		<button type="submit">Enviar</button>
+		<select name="" id="">
+			<option value="">Selecciona un animal</option>
+			<option value="">Gato</option>
+			<option value="">Perro</option>
+			<option value="">Gallina</option>
+		
+		</select>
+
+		<fieldset>
+			<legend>Ciudades</legend>
+			<label for="">Busca una ciudad</label>
+			<input name="ciudad" type="search" list="ciudades">
+			<datalist id="ciudades">
+				<option value="Quito"></option>
+				<option value="Cuenca"></option>
+				<option value="Guayaquil"></option>
+				<option value="Loja"></option>
+				<option value="Manabí"></option>
+			
+			</datalist>
+			<button type="submit">Enviar</button>
+			<input type="text" name="nombre" placeholder="Su nombre" required="">	
+			<progress value="10" max="100">
+			</fieldset>
+
+	<br><br>
+	<hr>
+	<fieldset>
+		
+		<legend>Calculadora</legend>
+		
+		 <form id="formu">
+		<!-- Input: enviar, output:recibir -->
+
+			<label>Division</label><br><br>
+			<input type="number" id="numero1" step="any">
+			<input type="number" id="numero2" step="any"> = 
+			<output id="resultado" name="resultados" for="numero1 numero2"></output>
+		</form>
+
+		<!-- Se coloca el nombre de la funcion en el oninput, dentro del form 	-->
+		<script>
+			function division (){
+
+				document.getElementById('formu').addEventListener('input', division);
+				var numero1 = document.getElementById('numero1').value;
+				var numero2 = document.getElementById('numero2').value;
+
+				var resultado = numero1 / numero2;
+				document.getElementById('resultado').value = resultado;
+
+			}
+
+		</script>
+
+
+	</fieldset>
+	
+</body>
+</html>

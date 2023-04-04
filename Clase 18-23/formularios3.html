@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!-- Input: enviar, output:recibir -->
+	
+	<form id name="multiplicacion" onsubmit="return false" oninput="resultado.value= parseInt(numero1.value) * parseInt(numero2.value)" >
+	
+
+			<label>Calculadora de Multiplicación</label><br><br>
+			<input type="number" name="numero1" step="any">
+			<input type="number" name="numero2" step="any"> = 
+			<output name="resultado" for="numero1 numero2"></output>
+
+	</form>
+
+	<form id name="division" onsubmit="return false" oninput="resultado.value= parseInt(numero1.value) / parseInt(numero2.value)" >
+	
+
+			<label>Calculadora de division</label><br><br>
+			<input type="number" name="numero1" step="any">
+			<input type="number" name="numero2" step="any"> = 
+			<output name="resultado" for="numero1 numero2"></output>
+
+	</form>
+</body>
+</html>
